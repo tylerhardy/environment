@@ -10,13 +10,15 @@ set PATH=%PATH%;"C:/Users/\tylerhardy/AppData/Roaming/Composer"
 
 
 ::EDITS
-DOSKEY e=sublime_text %USERPROFILE%\Dropbox\Sandbox\doskey\env.cmd
-DOSKEY save=%USERPROFILE%\Dropbox\Sandbox\doskey\env.cmd
+DOSKEY e=sublime_text %USERPROFILE%\Developer\environment\env.cmd
+DOSKEY save=%USERPROFILE%\Developer\environment\env.cmd
 ::If you are in a cmd session, enter cmd to restart cmd and reload the env.cmd file.
 DOSKEY editHost="C:\Program Files\Sublime Text 3\sublime_text.exe" "C:\Windows\System32\drivers\etc\hosts"
 
 :: COMMANDS
-DOSKEY ls=dir/d/o:g
+rem DOSKEY ls=dir/d/o:g
+DOSKEY ls=ls -av
+DOSKEY ll=ls -lhA
 DOSKEY clear=cls
 DOSKEY pub=cat ~/.ssh/id_rsa.pub ^| clip ^&^& echo "copied to clipboard"
 DOSKEY py=python $*
@@ -52,9 +54,10 @@ DOSKEY ...=cd ..\..
 DOSKEY ....=cd ..\..\..
 DOSKEY .....=cd ..\..\..\..
 DOSKEY ~=cd %USERPROFILE%
+
 DOSKEY dropbox=cd %USERPROFILE%\Dropbox\$*
 DOSKEY docs=cd %USERPROFILE%\Documents
 DOSKEY desk=cd %USERPROFILE%\Desktop
 DOSKEY sand=cd %USERPROFILE%\Dropbox\Sandbox\$*
 DOSKEY ws=cd %USERPROFILE%\Developer\$*
-DOSKEY sites=cd %USERPROFILE%\Dropbox\Sites\$*
+DOSKEY env=cd %USERPROFILE%\Developer\environment\$*
