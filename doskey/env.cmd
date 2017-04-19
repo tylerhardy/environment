@@ -45,7 +45,8 @@ DOSKEY gs=git status
 DOSKEY ga=git add . ^&^& git status
 DOSKEY gm=git add . ^&^& git status ^&^& git commit -m $*
 DOSKEY gc!=git add . ^&^& git commit -m "quick commit" ^&^& git push ^&^& git status
-DOSKEY gp=git push
+DOSKEY gph=git push
+DOSKEY gpl=git pull
 DOSKEY glog=git log --graph --decorate  --all --pretty=oneline
 
 :: COMMON DIRECTORIES
