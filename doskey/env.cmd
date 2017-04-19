@@ -32,12 +32,12 @@ DOSKEY rmrf=rd /q /s $*
 DOSKEY touch=copy nul $* > nul
 
 ::PYTHON
-DOSKEY ve="activate"
-DOSKEY d="deactivate"
-DOSKEY vedj="%USERPROFILE%\Dropbox\Sandbox\virtualenv\django\scripts\activate"
-DOSKEY ddj="%USERPROFILE%\Dropbox\Sandbox\virtualenv\django\scripts\deactivate"
-DOSKEY vepp="%USERPROFILE%\Dropbox\Sandbox\virtualenv\PythonProjects\scripts\activate"
-DOSKEY dpp="%USERPROFILE%\Dropbox\Sandbox\virtualenv\PythonProjects\scripts\deactivate"
+DOSKEY ve=".\Scripts\activate"
+DOSKEY d=".\Scripts\deactivate"
+rem DOSKEY ve="activate"
+rem DOSKEY d="deactivate"
+rem DOSKEY vedj="%USERPROFILE%\Dropbox\Sandbox\virtualenv\django\scripts\activate"
+rem DOSKEY ddj="%USERPROFILE%\Dropbox\Sandbox\virtualenv\django\scripts\deactivate"
 ::GIT
 DOSKEY gprofile=git config --global user.name "tylerhardy" ^&^& git config --global user.email "tylerhardy@gmail.com" ^&^& git config --global credential.helper cache
 DOSKEY g="git "
