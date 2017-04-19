@@ -14,7 +14,7 @@ git clone git@github.com:tylerhardy/environment.git
 ```
 ### **setup DOSKEY**
 ```
-cd environment
+cd environment\doskey
 doskey.reg
 env.cmd
 ```
@@ -36,8 +36,8 @@ env.cmd
 - Choose Alternative font to be Anonymice Powerline
 - Modify the value of Unicode ranges to add: `E0A0; E0B0;`
 - Save Settings
-- Run command while in environment folder:
+- Run command:
 ```
 cd %CMDER_ROOT%/config  
-mklink /H powerline_prompt.lua %USERPROFILE%\Developer\environment\powerline_prompt.lua
+mklink /H powerline_prompt.lua %USERPROFILE%\Developer\environment\cmder\powerline_prompt.lua
 ```

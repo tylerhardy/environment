@@ -1,4 +1,4 @@
-::Use doskey.reg to install - env.cmd must be in "%USERPROFILE%\\Dropbox\\Sandbox\\doskey\\env.cmd" or change path
+::Use doskey.reg to install - env.cmd must be in "%USERPROFILE%\\Developer\\environment\\doskey\\env.cmd" or change path
 @echo off
 :: Temporary system path at cmd startup
 set PATH=%PATH%;"C:\Program Files\Sublime Text 3\"
@@ -18,7 +18,7 @@ DOSKEY editHost="C:\Program Files\Sublime Text 3\sublime_text.exe" "C:\Windows\S
 :: COMMANDS
 rem DOSKEY ls=dir/d/o:g
 DOSKEY ls=ls -Av --color $*
-DOSKEY ll=ls -lGhA --color $*
+DOSKEY ll=ls -lGhA --color $* -Av --color $*
 DOSKEY clear=cls
 DOSKEY pub=cat ~/.ssh/id_rsa.pub ^| clip ^&^& echo "copied to clipboard"
 DOSKEY py=python $*
