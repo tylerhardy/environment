@@ -55,7 +55,7 @@ DOSKEY ...=cd ..\..
 DOSKEY ....=cd ..\..\..
 DOSKEY .....=cd ..\..\..\..
 DOSKEY ~=cd %USERPROFILE%
-
+DOSKEY venv=cd %USERPROFILE%\Developer\venv\$*
 DOSKEY dropbox=cd %USERPROFILE%\Dropbox\$*
 DOSKEY docs=cd %USERPROFILE%\Documents
 DOSKEY desk=cd %USERPROFILE%\Desktop
