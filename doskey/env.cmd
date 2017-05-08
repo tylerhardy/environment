@@ -32,10 +32,12 @@ DOSKEY rmrf=rd /q /s $*
 DOSKEY touch=copy nul $* > nul
 
 ::PYTHON
-DOSKEY ve=".\Scripts\activate"
-DOSKEY d=".\Scripts\deactivate"
+DOSKEY ve=workon $*
+rem DOSKEY d=".\Scripts\deactivate"
+rem DOSKEY ve=".\Scripts\activate"
+rem DOSKEY d=".\Scripts\deactivate"
 rem DOSKEY ve="activate"
-rem DOSKEY d="deactivate"
+DOSKEY d="deactivate"
 rem DOSKEY vedj="%USERPROFILE%\Dropbox\Sandbox\virtualenv\django\scripts\activate"
 rem DOSKEY ddj="%USERPROFILE%\Dropbox\Sandbox\virtualenv\django\scripts\deactivate"
 ::GIT
@@ -55,7 +57,7 @@ DOSKEY ...=cd ..\..
 DOSKEY ....=cd ..\..\..
 DOSKEY .....=cd ..\..\..\..
 DOSKEY ~=cd %USERPROFILE%
-DOSKEY venv=cd %USERPROFILE%\Developer\venv\$*
+rem DOSKEY venv=cd %USERPROFILE%\Developer\venv\$*
 DOSKEY dropbox=cd %USERPROFILE%\Dropbox\$*
 DOSKEY docs=cd %USERPROFILE%\Documents
 DOSKEY desk=cd %USERPROFILE%\Desktop
